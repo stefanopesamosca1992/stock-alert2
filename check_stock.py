@@ -17,8 +17,8 @@ def send_telegram(message):
 
 html = requests.get(URL).text
 
-if True:
-#if '"tieneStock":true' in html:
+#if True:
+if '"tieneStock":true' in html:
     send_telegram(
         "🚨 HAY STOCK de figuritas FIFA 2026 en San Roque!\n\n" + URL
     )
